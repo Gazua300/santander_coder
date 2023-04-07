@@ -1,0 +1,12 @@
+h1 {
+    text-align: center;
+    text-shadow: 2px 2px 4px goldenrod;
+}
+
+#sct {
+    border: 1px solid;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 2px 2px 4px goldenrod;
+    background-image: linear-gradient(to right , whitesmoke, lightgray);
+}
