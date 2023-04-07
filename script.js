@@ -1,10 +1,26 @@
-var h1 = document.createElement('h1')
-var section = document.createElement('div')
+var h1 = document.getElementById('title')
+var input = document.getElementById('display')
+var table = document.getElementById('tableCalc')
+
+
 
 h1.textContent = 'Título'
-section.textContent = 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.'
-section.setAttribute('id', 'sct')
+input.setAttribute('placeholder', '0.00')
 
-document.body.appendChild(h1)
-document.body.appendChild(section)
+
+for(let i = 0; i < 3; i++){
+    var row = table.insertRow(i)
+
+    for(let j = 0; j < 3; j++){
+        var cell = row.insertCell(j)
+        
+        var button = document.createElement('button')
+        button.innerHTML = `${(i*3+j+1)}`
+
+        cell.appendChild(button)
+    }
+}
+
+
+
 

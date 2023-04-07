@@ -3,10 +3,15 @@ h1 {
     text-shadow: 2px 2px 4px goldenrod;
 }
 
-#sct {
+#section {
+    position: absolute;
+    top: 20vh;
+    left: 50%;
+    transform: translateX(-50%);
     border: 1px solid;
-    padding: 10px;
-    border-radius: 10px;
-    box-shadow: 2px 2px 4px goldenrod;
-    background-image: linear-gradient(to right , whitesmoke, lightgray);
+    background-image: linear-gradient(whitesmoke, lightgray);
+}
+
+#display {
+    width: 40%;
 }

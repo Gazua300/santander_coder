@@ -8,8 +8,24 @@
     <link rel="stylesheet" href="style.css">
     <title>Introcução à web</title>
 </head>
-<body>
-    
+<body>   
+    <h1 id="title"></h1>  
+    <div id="section">
+        <input type="text" id="display" autofocus onkeypress="return onlyNumbers(event)">
+        <table id="tableCalc">
+
+        </table>
+    </div>
 </body>
+    <script>
+        function onlyNumbers(evt){
+            var charCode = evt.which ? evt.which : evt.keyCode
+
+            if(charCode > 31 && (charCode < 48 || charCode > 57)){
+                return false
+            }
+            return true
+        }
+    </script>
     <script src="script.js"></script>
 </html>
