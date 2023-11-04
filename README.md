@@ -3,3 +3,4 @@
 ## Salvando mudanças para testar git diff
 
 * uso do comando restore
+* comando git pull
